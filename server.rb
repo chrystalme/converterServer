@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'webrick'
-
 require_relative 'convert_handler'
 
 server = WEBrick::HTTPServer.new(Port: 8000)

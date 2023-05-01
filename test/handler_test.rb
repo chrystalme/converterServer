@@ -4,7 +4,7 @@ require 'webrick'
 require_relative '../json_to_csv_converter'
 
 class HandlerTest < WEBrick::HTTPServlet::AbstractServlet
-    def call(env)
+  def call(env)
     req = Rack::Request.new(env)
 
     if req.post? && req.path == '/convert'

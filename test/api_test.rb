@@ -10,7 +10,7 @@ class ApiTest < Minitest::Test
   include Rack::Test::Methods
 
   def app
-      Rack::Builder.new do
+    Rack::Builder.new do
       map '/convert' do
         run HandlerTest.new(PORT: 8000)
       end
@@ -26,7 +26,7 @@ class ApiTest < Minitest::Test
     exported_csv = "name,age,gender,email\nGreg,45,male,geereg@example.com\nJenny,35,female,jehny@example.com\n"
 
     post '/convert', json_payload.to_json, { 'Content-Type' => 'application/json' }
-    
+
     assert last_response.ok?
     assert_equal 'text/csv', last_response['Content-Type']
     assert_equal exported_csv, last_response.body
