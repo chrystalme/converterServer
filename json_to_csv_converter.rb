@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'csv'
 
 class JsonToCsvConverter
@@ -9,6 +11,6 @@ class JsonToCsvConverter
       json_payload.each do |obj|
         csv << obj.values
       end
-    end 
+    end
   end
 end

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require 'webrick'
 require 'json'
+require_relative 'json_to_csv_converter'
 
 class ConvertHandler < WEBrick::HTTPServlet::AbstractServlet
   def do_POST(request, response)
