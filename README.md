@@ -33,3 +33,7 @@ To run the test suite, run the following command:
 ```bash
 ruby test_suite.rb
 ```
+
+## 📝 License
+
+This project is [MIT](https://en.wikipedia.org/wiki/MIT_License) licensed
