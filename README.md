@@ -9,7 +9,7 @@ To run this server, you will need to have Ruby installed on your computer. You c
 Once you have ruby installed, you can install the required depencencies by runnning the following command in the project directory:
 
 ```bash
-gem install webrick
+$ gem install webrick
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ gem install webrick
 To start the server, run the following command:
 
 ```bash
-ruby server.rb
+$ ruby server.rb
 ```
 
 This will start the server on **'localhost:8000'**
@@ -31,7 +31,7 @@ The server will return a CSV file in the response body.
 To run the test suite, run the following command:
 
 ```bash
-ruby test_suite.rb
+$ ruby test_suite.rb
 ```
 
 ## 📝 License
