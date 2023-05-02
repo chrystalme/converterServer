@@ -24,7 +24,15 @@ This will start the server on **'localhost:8000'**
 
 To convert a JSON file to a CSV, send a POST request to the /convert endpoint with the JSON data in the request body.
 
+```bash
+$ curl -X POST -H "Content-Type: application/json" -d '[{"name":"Alice","age":25,"email":"alice@example.com"}]' http://localhost:8000/convert
+```
+
 The server will return a CSV file in the response body.
+```bash
+name,age,email
+Alice,25,alice@example.com
+```
 
 ## Testing
 
